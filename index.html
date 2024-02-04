@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETHERYEAN CAFE</title> 
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var i = 0;
+        var txt = '"Fueling City Spirits, One Sip at a Time."';
+        var speed = 50;
+
+        function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("t1").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+            }
+        }
+
+        window.addEventListener('load', function() {
+            // Call your function when the entire page is loaded, including images and other resources
+            typeWriter();
+          });
+    </script>
+</head>
+<body>
+
+    <div class="bg1" id="home">
+        <div class="header">
+            <center><h1 class="logo">ETHERYEAN CAFE</h1></center>
+            <div class="navbar">
+                
+                <ul class="leftnav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contacts"><b>Set Reservations Now!</b></a></li>
+                </ul>
+                <ul class="rightnav">
+                    <li ><a href="signUp.html">Sign Up</a></li>
+                    <li><a href="login.html">Log In </a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="slogan">
+            <p id="t1"></p>
+        </div>   
+    </div>
+
+    <div class="products" id="products">
+        <center>
+            <h1>- - - - - - - - - Our Products - - - - - - - - - </h1>
+            <i>"The scent of the morning brew, the lovely music from the radio, the crisp of freshly baked bread.<br>
+                 Everything and everything. I can't wait to start a new day!"</i><br><br>
+        </center>
+            <div class="container">
+                <div class="item1">
+                    <b class="text-overlay">COLD DRINKS</b>
+                </div>
+                <div class="item2">
+                    <b class="text-overlay">HOT DRINKS</b>
+                </div>
+                <div class="item3">
+                    <b class="text-overlay">PASTRIES</b>
+                </div>
+            </div>
+    </div>
+
+    <div>
+        <video class="video-background" autoplay muted loop>
+            <source src="coffeeloop.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="about" id="about">
+        <center>
+            <h1>- - - - - - - - - About Us - - - - - - - - - </h1>
+            <i class="dull">"The past, the future. Some may remember; some may not. <br>
+                 But the brave legends, adventures, and its spirit will be immortal."</i>
+        </center>
+        <table>
+            <tr>
+                <td >
+                    <div class="about-container"></div>
+                </td>
+                <td>
+                    <p>
+                        The Etheryean Cafe was born in 1963, when a young couple decided to open a cozy place where people could enjoy a cup of coffee and a friendly chat. They rented a small space in a busy street, and decorated it with simple but charming furniture. 
+                        <br><br>The Etheryean Cafe soon became a popular spot for locals and visitors alike, who appreciated the quality of the coffee, the variety of the pastries, and the warm atmosphere. The staff always greeted their customers with a smile, and often shared stories about their travels and experiences. 
+                        <br><br>For us, the Etheryean Cafe was more than just a coffee shop, <b>It was a community.</b>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="contacts" id="contacts">
+        <center>
+            <h1>Contact Us</h1>
+            <hr style="width: 30%;">
+            <i class="dull">Contact us for Reservations and Business Inquires at</i>
+            <p>
+                +63(2)6312476 / +63(2)4373838
+                <br>7th Ave Bonifacio High Street, Taguig, Metro Manila
+            </p>
+        </center>
+    </div>
+    
+
+
+</body>
+</html>
